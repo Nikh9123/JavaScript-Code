@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <ul id="element" data = "valid">
+        <li class = "list-item"> hello</li>
+        
+        <li class= "list-item" >nikhil</li>
+        <li class= "list-item" >mera naam</li>
+    </ul>
+    <div>First Div</div>
+    <div>second Div</div>
+    <script>
+
+    </script>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>four</td>
+        </tr>
+    </table>
+    <script>
+      console.log(document.documentElement)
+      console.log(document.body)
+       console.log(document.head)
+
+    //   //children
+    //   console.log(document.body.childNodes)
+      console.log(document.body.children)
+      console.log(document.firstChild)
+      console.log(document.firstElementChild)
+
+      console.log(document.lastElementChild )
+      //printing childnode 
+    //   for(node of document.body.childNodes ){
+    //     console.log(node)''
+    //   }
+
+    //   const arr = Array.from(document.body.childNodes)
+    //   console.log(arr)
+
+    ///   sibblings ///
+    //  const ana = (document.body.children[0])
+    //  console.log(ana)
+
+    //  const Ultag = document.body.children[0]
+    
+    //  const TagLi = Ultag.children[0]
+    //  const TagLi1 = Ultag.children[1]
+    //  const TagLi2 = Ultag.children[2]
+    // //  console.log(TagLi)
+    //  console.log(TagLi1.previousElementSibling.textContent)
+    // //  console.log(TagLi1.nextElementSibling.textContent)
+    // //  console.log(TagLi2)
+    // //  console.log(Ultag.nextElementSibling)
+
+    //table dom manipulation//
+
+    // const tbtag = document.body.children[1]
+    // console.log(tbtag.tBodies[0].rows[0].cells[1].style = "background-color:green;")
+    // console.log(tbtag.tBodies[0].rows[0].cells[0].style = "background-color:red;")
+    // console.log(tbtag.tBodies[0].rows[1].cells[1].style = "background-color:blue;")
+    // console.log(tbtag.tBodies[0].rows[1].cells[0].style = "background-color:violet;")
+    // console.log(tbtag.rows)
+
+    // id dom //
+    //ID search //
+    // elemet.style.background = "red"
+    // console.log()
+    // const ulTag =document.getElementById("element")
+    // ulTag.style.backgroundColor = "red"
+   
+   
+   // class dom //
+
+  // let listItem = document.getElementsByClassName("list-item")
+   
+
+//     console.log(listItem)
+//     console.log(document.getElementsByTagName("table"))
+// const listItemss = document.querySelectorAll('ul > li:nth-child(1)')
+//    console.log(listItemss[0].textContent)
+//console.log(element.id)
+//console.log(element.getAttribute('data'))  
+//console.log(element.setAttribute('order-placed', 'humsath'))
+//console.log(element.getAttribute('order-placed'))  
+//console.log(element.hasAttribute('data')) 
+//console.log(element.removeAttribute('data'))   
+//console.log(element.hasAttribute('data'))
+
+
+//creating updating and removing element
+const  newDiv = document.createElement('div')
+const  newText = document.createTextNode('tu chutiya hai')
+newDiv.appendChild(newText)
+
+body.prepend(newDiv)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 3px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>1:1</td>
+            <td>2:1</td>
+            <td>3:1</td>
+            <td>4:1</td>
+            <td>5:1</td>
+        </tr>
+        <tr>
+            <td>1:2</td>
+            <td>2:2</td>
+            <td>3:2</td>
+            <td>4:2</td>
+            <td>5:2</td>
+        </tr>
+        <tr>
+            <td>1:3</td>
+            <td>2:3</td>
+            <td>3:3</td>
+            <td>4:3</td>
+            <td>5:3</td>
+        </tr>
+        <tr>
+            <td>1:4</td>
+            <td>2:4</td>
+            <td>3:4</td>
+            <td>4:4</td>
+            <td>5:4</td>
+        </tr>
+        <tr>
+            <td>1:5</td>
+            <td>2:5</td>
+            <td>3:5</td>
+            <td>4:5</td>
+            <td>5:5</td>
+        </tr>
+    </table>
+    
+    <script>
+        // Write the code to paint all the row in diffrent colors.
+       const Tbtag = document.body.children[0]
+       console.log(Tbtag)
+        // const tbTag = document.body.tbodies[0]
+        //row[0]
+        console.log(Tbtag.tBodies[0].rows[0].cells[0].style = "background-color:green;")
+        console.log(Tbtag.tBodies[0].rows[0].cells[1].style="background-color:red;")
+        console.log(Tbtag.tBodies[0].rows[0].cells[2].style="background-color:blue;")
+        console.log(Tbtag.tBodies[0].rows[0].cells[3].style="background-color:pink;")
+        console.log(Tbtag.tBodies[0].rows[0].cells[4].style="background-color:DarkSalmon;")
+       ///  row[1]  //
+        console.log(Tbtag.tBodies[0].rows[1].cells[0].style="background-color:skyblue;")
+        console.log(Tbtag.tBodies[0].rows[1].cells[1].style="background-color:violet;")
+        console.log(Tbtag.tBodies[0].rows[1].cells[2].style="background-color:black;")
+        console.log(Tbtag.tBodies[0].rows[1].cells[3].style="background-color:white;")
+        console.log(Tbtag.tBodies[0].rows[1].cells[4].style="background-color:PaleVioletRed;")
+        /// row[2]
+        console.log(Tbtag.tBodies[0].rows[2].cells[0].style="background-color:#BDB76B;")
+        console.log(Tbtag.tBodies[0].rows[2].cells[1].style="background-color:#DDA0DD;")
+        console.log(Tbtag.tBodies[0].rows[2].cells[2].style="background-color:crimson;")
+        console.log(Tbtag.tBodies[0].rows[2].cells[3].style="background-color:Fuchsia;")
+        console.log(Tbtag.tBodies[0].rows[2].cells[4].style="background-color:Gold;")
+        // row[3]
+        console.log(Tbtag.tBodies[0].rows[3].cells[0].style="background-color:#ADFF2F;")
+        console.log(Tbtag.tBodies[0].rows[3].cells[1].style="background-color:#00FA9A;")
+        console.log(Tbtag.tBodies[0].rows[3].cells[2].style="background-color:#228B22;")
+        console.log(Tbtag.tBodies[0].rows[3].cells[3].style="background-color:#808000;")
+        console.log(Tbtag.tBodies[0].rows[3].cells[4].style="background-color:#008080;")
+        /// row 4 //
+        console.log(Tbtag.tBodies[0].rows[4].cells[0].style="background-color:	#00FFFF;")
+        console.log(Tbtag.tBodies[0].rows[4].cells[1].style="background-color:	#4682B4;")
+        console.log(Tbtag.tBodies[0].rows[4].cells[2].style="background-color:#800000;")
+        console.log(Tbtag.tBodies[0].rows[4].cells[3].style="background-color:	#2F4F4F")
+        console.log(Tbtag.tBodies[0].rows[4].cells[4].style="background-color:#BC8F8F;")
+
+        
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <a name="list">the list</a>
+    <ul>
+        <li><a href="http://google.com">http://google.com</a></li>
+        <li><a href="/tutorial">/tutorial.html</a></li>
+        <li><a href="local/path">local/path</a></li>
+        <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+        <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+        <li><a href="http://internal.com/test">http://internal.com/test</a></li>
+    </ul>
+    <!-- 
+        Change all external links color to green
+        Execption :- 
+                    1. Its href must have :// in it
+                    2. It should not start with http://internal.com 
+     -->
+     <script>
+        let select = 'a[href*="://"]:not([href^="http://internal.com"])';
+        let links = document.querySelectorAll(select);
+        links.forEach(link => link.style.color = 'black');
+     </script>
+</body>
+
+</html>
