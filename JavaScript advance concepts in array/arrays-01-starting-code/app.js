@@ -1,28 +1,28 @@
-// const number = [1, 2, 3];
-// console.log(number);
+const number = [1, 2, 3];
+console.log(number);
 
-// /*low performance creating array techniques🥺
-// const moreNumbers = new Array(5);
-// console.log(moreNumbers);
-// const moreNumbers1 = Array(5);
-// console.log(moreNumbers1);
-// const yetMoreNumbers = Array.of(1,2);
-// console.log(yetMoreNumbers);
-// */
+//low performance creating array techniques🥺
+const moreNumbers = new Array(5);
+console.log(moreNumbers);
+const moreNumbers1 = Array(5);
+console.log(moreNumbers1);
+const yetMoreNumbers = Array.of(1,2);
+console.log(yetMoreNumbers);
+
 
 // //technique to convert array like objects in real arrays ⚠️⚠️⚠️
-// // const moreNumbers = Array.from([1, 2, 3]);
-// // // console.log(moreNumbers);
+ const moreNumbers = Array.from([1, 2, 3]);
+ console.log(moreNumbers);
 
-// // //split string into characters
-// // const moreNumber1s = Array.from('hii!');
-// // // console.log(moreNumber1s);
+//split string into characters
+const moreNumber1s = Array.from('hii!');
+console.log(moreNumber1s);
 
-// // //passing html elements to an array⚠️⚠️
-// // const listItems = document.querySelectorAll('li');
-// // // console.log(listItems);
-// // const arraylistItems = Array.from(listItems);
-// // // console.log(arraylistItems);
+//passing html elements to an array⚠️⚠️
+const listItems = document.querySelectorAll('li');
+console.log(listItems);
+const arraylistItems = Array.from(listItems);
+console.log(arraylistItems);
 
 // // //storing in arrays 📥📥📥
 // // const hobbies = ['cooking', 'playing'];
@@ -46,20 +46,20 @@
 // const hobbies = ['sports','hobbies'];
 // // hobbies.push('reading');
 
-// // for(let i= hobbies.length-1 ;i > 0 ; i--)
-// // {
-// //     hobbies[i+1] = hobbies[i];
-// // }
-// // hobbies.length+1 ;
-// // hobbies[0]= 5 ;
+// for(let i= hobbies.length-1 ;i > 0 ; i--)
+// {
+//     hobbies[i+1] = hobbies[i];
+// }
+// hobbies.length+1 ;
+// hobbies[0]= 5 ;
 
-// // hobbies.unshift('coding');//shift all elements to  right
-// // const poppedvalue= hobbies.pop();
-// // hobbies.shift('novel');//shift all elements to  left
+// hobbies.unshift('coding');//shift all elements to  right
+// const poppedvalue= hobbies.pop();
+// hobbies.shift('novel');//shift all elements to  left
 
-// // replacing Elements
-// // hobbies[1] = 'kabbadi';
-// hobbies.push('kabbadi','cricket');
+// replacing Elements
+// hobbies[1] = 'kabbadi';
+hobbies.push('kabbadi','cricket');
 
 // console.log('beforesplice',hobbies);
 
